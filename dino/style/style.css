@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.game{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border-bottom: 15px solid rgb(18, 224, 45);
+}
+
+.score{
+    /* border: 1px solid black; */
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(3, 54, 19);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.time{
+    color: rgb(3, 54, 19);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.dino{
+    /* border: 1px solid red; */
+    width: 390px;
+    height: 350px;
+    background: #000;
+    background: url(../img/snap2022-04-25-12-59-52.png) no-repeat;
+    position: relative;
+    top: 150px;
+}
+
+.kactus{
+    position: relative;
+    /* top: 60px; */
+    left: 1450px;
+    width: 100px;
+    height:  150px;
+    background: url(../img/snap2022-04-25-12-53-37.jpg) no-repeat;
+    background-color: tomato;
+    animation: moveKactus 2s infinite linear;
+}
+
+.kactus2{
+    animation: moveKactus 1.5s infinite linear;
+}
+.kactus3{
+    animation: moveKactus 1.3s infinite linear;
+}
+.kactus4{
+    animation: moveKactus 1.1s infinite linear;
+}
+.kactus5{
+    animation: moveKactus 0.9s infinite linear;
+}
+.kactus6{
+    animation: moveKactus 0.7s infinite linear;
+}
+
+@keyframes moveKactus{
+    0%{
+        left: 1450px;
+    }
+    100%{
+        left: -10px;
+    }
+}
+
+.jump{
+    animation: jump 0.5s    linear;
+}
+
+@keyframes jump{
+    0%{
+        top: 215px;
+    }
+    30%{
+        top: 50px;
+    }
+    50%{
+        top: 0px;
+    }
+    80%{
+        top: 50px;
+    }
+    100%{
+        top: 215px;
+    }
+}
+
+ 
